@@ -33,7 +33,7 @@ const questions = [
     {
         type: "input",
         message: "What command should be run to install dependencies?",
-        name: "command",
+        name: "install",
     },
     {
         type: "input",
@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
         } else {
             console.log("Generating README...");
         }
-    }
+    })
 }
 
 // TODO: Create a function to initialize app
