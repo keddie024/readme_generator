@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license.toUpperCase() == "MIT") {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
   } else {
     return ``
   }
@@ -22,7 +22,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license.toUpperCase() == "MIT") {
-    return `This project is licensed under the [${license}](${renderLicenseLink(license)}) license.`
+    return `This project is licensed under the [${license.toUpperCase()}](${renderLicenseLink(license)}) license.`
   } else {
     return ``
   }
@@ -41,10 +41,15 @@ function generateMarkdown(data) {
   ## Table of Contents
   
   [Installation](#install)
+
   [Usage](#use)
+
   [License](#license)
+
   [Contributing](#contribute)
+
   [Tests](#tests)
+
   [Questions](#questions)
 
   ## Installation <a name="install"></a>
